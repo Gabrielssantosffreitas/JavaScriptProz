@@ -1,3 +1,6 @@
+
+// * usando cinceito de poo
+// ! testando
 class Calculadora{
 
     static printarResultado(resultado){
