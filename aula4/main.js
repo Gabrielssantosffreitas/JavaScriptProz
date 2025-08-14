@@ -70,13 +70,16 @@ class ValidacaoFormulario {
             alert(" o telefone presisa ter 10 ou 11 digitos");
             return false;
         }if(this.#formulario.getNumberIdade() < 0){
-            alert("digite uma idade valida")
-            return false
+            alert("digite uma idade valida");
+            return false;
         }if(this.#formulario.getCurso() == 0){
-            alert(" digite seu curso")
-            return false
+            alert(" digite seu curso");
+            return false;
         }
-        return true;
+         
+         alert(" Formulario Enviado Com Sucesso");
+         return true;
+        
         
     }
 }
@@ -87,12 +90,15 @@ document.addEventListener("DOMContentLoaded",()=>{
     const FORMULARIO = new FormularioEntity("submit","reset","cadastro")
     
     FORMULARIO.getFormFormulario().addEventListener("submit",(e)=>{
+        
         e.preventDefault()
+
         FORMULARIO.setDados("nome","idade","email","telefone","curso_disponiveis");
-        const VALIDAFORMULARIO = new ValidacaoFormulario(FORMULARIO)
-        const BOOLEAN_IS_VALIDO =  VALIDAFORMULARIO.getBooleanIsFormularioValidado();
-        if(BOOLEAN_IS_VALIDO){
-            alert(" Formulario Enviado Com Sucesso")
-        }
+
+        const VALIDAFORMULARIO = new ValidacaoFormulario(FORMULARIO);
+
+        VALIDAFORMULARIO.getBooleanIsFormularioValidado();
+
+     
     })
 })
