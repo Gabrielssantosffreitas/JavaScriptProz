@@ -1,0 +1,63 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ABB2FF;
+    
+}
+body section{
+    
+    background-color:rgb(238, 238, 238);
+    border-radius: 20px;
+    box-shadow:#0000001e 5px 6px 4px 1px;
+    width: 60vw;
+    margin: auto;
+    padding: 1rem;
+}
+body section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+body section form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+body section form input{
+    text-align: justify;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 3px;
+    border: 0.5px solid #303030; /* 1px = borda fina */
+    padding: 0.5rem; /* espaço interno para não ficar apertado */
+   
+
+}
+
+body section form label{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+body section form select{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 3px;
+    border: 0.5px solid #303030; /* 1px = borda fina */
+    padding: 0.5rem; /* espaço interno para não ficar apertado */
+   
+
+}
+
+body section form div{
+    margin: 1rem 0;
+}
