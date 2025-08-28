@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+</head>
+<body>
+    <h1> Aula 07</h1>
+    <main style="margin: auto;">
+
+        <div class="cs-div" style="width: 70%; margin: auto; display: flex; flex-direction: column;">
+
+
+            <input 
+            class="cs-input"
+                type="text" 
+                name="texto" 
+                id="input"
+                onfocus="focar(input)"
+                onblur="perderFoco(input)"
+                onchange="mudar(input)"
+                onkeypress="pressionar(event)"
+                style="margin-top: 20px;"
+                >
+            <button   style="margin-top: 20px;" class="cs-btn" onclick="clicar()"> clique aqui </button>
+            <div id="area"
+                style="margin-top: 20px;"
+                onmouseout="sairMouse()"
+                onmouseover="passarMouser()"
+            >
+              
+                <p> 
+                    passe o mouse aqui para testar essa div 
+                </p>
+            </div>
+        </div>
+
+            <script src="javaScript.js"></script>
+    </main>
+</body>
+</html>
